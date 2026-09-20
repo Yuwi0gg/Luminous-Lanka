@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Serene Lanka — curated Sri Lanka journeys for groups, couples, families and solo travelers.">
+<title>Serene Lanka | Sri Lanka Tours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#18332d;--green:#1f5a49;--deep:#10382e;--gold:#d7a84b;--cream:#fbf8f0;--muted:#6c756f;--white:#fff;--shadow:0 18px 50px rgba(15,45,37,.12);--radius:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif;background:var(--cream);line-height:1.6}
+h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.08;margin:0 0 18px}h1{font-size:clamp(3rem,7vw,6.4rem)}h2{font-size:clamp(2.2rem,4vw,4rem)}h3{font-size:1.55rem}
+p{margin:0 0 18px}.container{width:min(1160px,92%);margin:auto}.eyebrow{letter-spacing:.16em;text-transform:uppercase;font-size:.75rem;font-weight:700;color:var(--gold)}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:18px 0;transition:.3s}nav.scrolled{background:rgba(251,248,240,.94);backdrop-filter:blur(14px);box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Playfair Display";font-size:1.35rem;font-weight:800;color:inherit;text-decoration:none}.brand span{color:var(--gold)}
+.navlinks{display:flex;gap:26px;align-items:center}.navlinks a{color:inherit;text-decoration:none;font-weight:600;font-size:.9rem}.lang{border:1px solid currentColor;background:transparent;border-radius:30px;padding:8px 13px;font-weight:700;cursor:pointer}
+.hero{min-height:94vh;display:grid;align-items:end;position:relative;color:white;overflow:hidden;background:linear-gradient(90deg,rgba(7,39,31,.78),rgba(7,39,31,.16)),url("assets/golden-shores.jpg") center/cover}
+.hero-content{padding:150px 0 80px;max-width:850px}.hero p{font-size:1.15rem;max-width:680px;color:#f3f4ef}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;text-decoration:none;border:0;border-radius:999px;padding:14px 22px;font-weight:700;cursor:pointer}.primary{background:var(--gold);color:#1d2b22}.secondary{border:1px solid rgba(255,255,255,.55);color:white;background:rgba(255,255,255,.1);backdrop-filter:blur(5px)}
+section{padding:100px 0}.intro{text-align:center;max-width:820px;margin:auto}.intro p{color:var(--muted);font-size:1.06rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:45px}.stat{background:white;border-radius:18px;padding:24px;text-align:center;box-shadow:var(--shadow)}.stat strong{display:block;font-family:"Playfair Display";font-size:2rem;color:var(--green)}
+.tour-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:45px}.tour{background:white;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}.tour-img{height:280px;background-size:cover;background-position:center}.tour-body{padding:30px}.tour-body ul{padding-left:20px;color:var(--muted)}.tag{display:inline-block;background:#edf4ef;color:var(--green);border-radius:20px;padding:6px 10px;font-size:.75rem;font-weight:700;margin:3px}
+#seven .tour-img{background-image:url("assets/sigiriya.jpg")}
+#ten .tour-img{background-image:url("assets/wildlife.jpg")}
+.feature{background:var(--deep);color:white}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.feature p,.feature li{color:#dce7e1}.feature-card{border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);padding:30px;background:rgba(255,255,255,.05)}
+.experiences{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:45px}.experience{min-height:310px;border-radius:22px;overflow:hidden;position:relative;background-size:cover;background-position:center;display:flex;align-items:end}.experience:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(4,25,20,.86))}.experience div{position:relative;z-index:1;color:white;padding:25px}.experience p{color:#e7eee9}.e1{background-image:url("assets/sigiriya.jpg")}.e2{background-image:url("assets/scenic-train.jpg")}.e3{background-image:url("assets/wildlife.jpg")}.e4{background-image:url("assets/golden-shores.jpg")}
+.itinerary{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:45px}.day{background:white;padding:23px;border-radius:18px;box-shadow:0 8px 30px rgba(15,45,37,.07);border-left:4px solid var(--gold)}.day b{color:var(--green)}
+.included{background:#f0eadb}.checkgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:35px}.check{background:white;padding:18px;border-radius:15px}.check strong{display:block;margin-bottom:4px}.no{opacity:.7}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}.step{background:white;padding:25px;border-radius:20px;box-shadow:var(--shadow)}.num{font-family:"Playfair Display";font-size:2.2rem;color:var(--gold)}
+.cta{background:linear-gradient(135deg,var(--green),var(--deep));color:white;text-align:center;border-radius:32px;padding:70px 25px;margin-bottom:80px}.cta p{color:#dce7e1;max-width:600px;margin:0 auto 24px}.contact{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.contact a{color:white;text-decoration:none;border:1px solid rgba(255,255,255,.35);padding:12px 18px;border-radius:999px}
+footer{background:#09271f;color:#b9c9c2;padding:40px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{color:white}
+@media(max-width:800px){.navlinks{display:none}.stats,.steps{grid-template-columns:1fr 1fr}.tour-grid,.feature-grid,.experiences,.itinerary,.checkgrid{grid-template-columns:1fr}.hero{min-height:88vh}.hero-content{padding-bottom:60px}section{padding:75px 0}.footer-inner{flex-direction:column;text-align:center}}
+@media(max-width:480px){.stats,.steps{grid-template-columns:1fr}.hero h1{font-size:3.2rem}}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="container nav-inner">
+<a class="brand" href="#top">Serene <span>Lanka</span></a>
+<div class="navlinks"><a href="#tours">Tours</a><a href="#experiences">Experiences</a><a href="#itineraries">Itineraries</a><a href="#why">Why Us</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="container hero-content">
+<div class="eyebrow">Sri Lanka • Curated journeys</div>
+<h1>Your Sri Lanka Adventure Awaits.</h1>
+<p>We don't just plan trips; we curate experiences. From the moment you land until your farewell, we handle the hotels, private transport, expert-guided tours and seamless logistics.</p>
+<div class="actions"><a class="btn primary" href="#tours">Explore Tours</a><a class="btn secondary" href="#contact">Get a Free Custom Plan</a></div>
+</div></header>
+
+<section><div class="container intro">
+<div class="eyebrow">Travel your way</div><h2>Tailored Travel for Everyone</h2>
+<p>Whether you're traveling with a group, as a couple, with family, or solo, we create the right journey for your pace and preferences. Our 7-day Discovery and 10-day Explorer routes are the foundation — every detail can be customized.</p>
+<div class="stats"><div class="stat"><strong>7</strong>Day Discovery</div><div class="stat"><strong>10</strong>Day Explorer</div><div class="stat"><strong>3★–4★</strong>Handpicked Hotels</div><div class="stat"><strong>24/7</strong>Local Support</div></div>
+</div></section>
+
+<section id="tours"><div class="container"><div class="eyebrow">Choose your adventure</div><h2>Signature Sri Lanka Tours</h2>
+<div class="tour-grid">
+<article class="tour" id="seven"><div class="tour-img"></div><div class="tour-body"><span class="tag">7 DAYS</span><span class="tag">GROUP TOUR</span><h3>7-Day Sri Lanka Discovery</h3><p>Ancient wonders, misty mountains, wildlife and golden beaches — a fast-moving introduction to the island's essential highlights.</p><ul><li>Sigiriya & Dambulla</li><li>Kandy & Temple of the Tooth</li><li>Tea country & scenic train</li><li>Yala safari</li><li>Bentota beach & Madu River</li></ul><a class="btn primary" href="#contact">Get a Quote</a></div></article>
+<article class="tour" id="ten"><div class="tour-img"></div><div class="tour-body"><span class="tag">10 DAYS</span><span class="tag">MOST POPULAR</span><h3>10-Day Sri Lanka Explorer</h3><p>Our complete island experience — combining wildlife, ancient kingdoms, hill-country scenery, cultural immersion and coastal relaxation at a comfortable pace.</p><ul><li>Minneriya safari & village life</li><li>Sigiriya & Pidurangala</li><li>Kandy cultural experiences</li><li>Tea country & waterfalls</li><li>Ella, Tangalle, Mirissa, Galle & Bentota</li></ul><a class="btn primary" href="#contact">Get a Quote</a></div></article>
+</div></div></section>
+
+<section class="feature" id="why"><div class="container feature-grid"><div>
+<div class="eyebrow">The Serene Lanka difference</div><h2>Everything planned. Nothing rushed.</h2>
+<p>We are based in Sri Lanka, with local guides who know the island beyond the standard tourist path. Your private air-conditioned vehicle, carefully selected stays and guided experiences are coordinated from arrival to departure.</p>
+<ul><li><b>True local expertise</b> — authentic stories and local insight.</li><li><b>Personalized service</b> — group, couple, family or solo.</li><li><b>Best-value partnerships</b> — exclusive local hotel rates.</li><li><b>Total peace of mind</b> — fixed group departures and local support.</li></ul>
+</div><div class="feature-card"><h3>Traveling solo?</h3><p>Even without a full guided package, you can arrange accommodation through our trusted partner network at exclusive rates, giving you freedom to explore independently while keeping the value of local expertise.</p><a class="btn primary" href="#contact">Plan My Solo Trip</a></div></div></section>
+
+<section id="experiences"><div class="container"><div class="eyebrow">The island in four chapters</div><h2>Experiences You'll Remember</h2>
+<div class="experiences">
+<div class="experience e1"><div><h3>Sigiriya & Dambulla</h3><p>Ancient rock fortresses, cave temples, frescoes and unforgettable cultural heritage.</p></div></div>
+<div class="experience e2"><div><h3>Journey Through Tea Country</h3><p>The iconic scenic train journey through emerald hills, valleys and misty landscapes.</p></div></div>
+<div class="experience e3"><div><h3>Encounter Sri Lanka's Wild Soul</h3><p>Jeep safaris for elephants, leopards and unforgettable wilderness encounters.</p></div></div>
+<div class="experience e4"><div><h3>Unwind on Golden Shores</h3><p>Beach time, warm Indian Ocean waters, resort relaxation and spectacular sunsets.</p></div></div>
+</div></div></section>
+
+<section id="itineraries" class="included"><div class="container"><div class="eyebrow">At a glance</div><h2>10-Day Explorer Itinerary</h2>
+<div class="itinerary">
+<div class="day"><b>Day 1 · Sigiriya</b><br>Airport arrival, welcome and Minneriya Jeep Safari.</div>
+<div class="day"><b>Day 2 · Sigiriya</b><br>Village tour, Pidurangala Rock and Sigiriya Fortress.</div>
+<div class="day"><b>Day 3 · Kandy</b><br>Dambulla Cave Temple, Spice & Herb Garden and Cultural Show.</div>
+<div class="day"><b>Day 4 · Kandy</b><br>Temple of the Tooth, Peradeniya Gardens, Gem Museum and Tea Factory.</div>
+<div class="day"><b>Day 5 · Nuwara Eliya</b><br>Ambuluwawa Tower, Ramboda Falls and tea plantation.</div>
+<div class="day"><b>Day 6 · Ella</b><br>Scenic train ride, Nine Arches Bridge and Little Adam's Peak.</div>
+<div class="day"><b>Day 7 · Tangalle</b><br>Ravana Falls and beach relaxation.</div>
+<div class="day"><b>Day 8 · Bentota</b><br>Mirissa, Galle Fort, Madu River Safari, Moonstone Mine and Turtle Hatchery.</div>
+<div class="day"><b>Day 9 · Bentota</b><br>Beach and pool leisure, with optional activities.</div>
+<div class="day"><b>Day 10 · Departure</b><br>Breakfast by the sea and airport transfer.</div>
+</div></div></section>
+
+<section><div class="container"><div class="eyebrow">Simple & transparent</div><h2>What's Included</h2>
+<div class="checkgrid"><div class="check">✅ <strong>Accommodation</strong>Handpicked 3★–4★ hotels for all nights.</div><div class="check">✅ <strong>Private Transport</strong>Air-conditioned vehicle throughout the journey.</div><div class="check">✅ <strong>Guided Experiences</strong>Expert local English-speaking guide.</div><div class="check">✅ <strong>Entrance Fees</strong>Monument and national park entry tickets.</div><div class="check">✅ <strong>Activities</strong>Safaris, train tickets and tours listed in the itinerary.</div><div class="check">✅ <strong>Daily Breakfast</strong>Breakfast at your hotels.</div><div class="check">✅ <strong>Airport Transfers</strong>Pickup and drop-off included.</div><div class="check no">❌ <strong>Not Included</strong>International flights, ETA/visa fees, lunches & dinners unless specified, personal expenses and travel insurance.</div></div>
+</div></section>
+
+<section><div class="container"><div class="eyebrow">Fully customizable</div><h2>Your Wish Is Our Itinerary</h2><p style="max-width:700px;color:var(--muted)">Need 16 days? Want more beach time? Traveling with children? Prefer extra safari days? We can adapt the route, pace and experiences to your plans.</p>
+<div class="steps"><div class="step"><div class="num">01</div><h3>Choose</h3><p>Start with the 7-day or 10-day route.</p></div><div class="step"><div class="num">02</div><h3>Tell Us</h3><p>Share your dates, interests and travel style.</p></div><div class="step"><div class="num">03</div><h3>Receive</h3><p>Get a detailed itinerary and transparent quote.</p></div><div class="step"><div class="num">04</div><h3>Travel</h3><p>Secure your spot, pack your bags and enjoy Sri Lanka.</p></div></div></section>
+
+<section id="contact"><div class="container"><div class="cta"><div class="eyebrow">Start planning</div><h2>Your Island Paradise Awaits!</h2><p>Contact us today and let's start planning your unforgettable Sri Lankan journey. The proposal currently contains placeholder contact details, so replace these before publishing.</p>
+<div class="contact"><a href="https://wa.me/94XXXXXXXXX">WhatsApp</a><a href="mailto:hello@yourcompany.com">hello@yourcompany.com</a><a href="#">Instagram</a></div></div></div></section>
+
+<footer><div class="container footer-inner"><div><div class="brand footer-brand">Serene Lanka</div><small>Crafting unforgettable journeys in Sri Lanka.</small></div><small>© <span id="year"></span> Serene Lanka</small></div></footer>
+<script>
+const nav=document.getElementById('nav');window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+</script>
+</body>
+</html>
